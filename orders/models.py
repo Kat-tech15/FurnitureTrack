@@ -9,7 +9,7 @@ class Order(models.Model):
     quntity = models.PositiveIntegerField(default=1)
     status = models.CharField(max_length = 20, choices=[
         ('pending', 'Pending'),
-        ('shipped', 'Shipped'),
+        ('paid', 'Paid'),
         ('cancelled', 'Cancelled')
     ])
     ordered_at = models.DateTimeField(auto_now_add=True)

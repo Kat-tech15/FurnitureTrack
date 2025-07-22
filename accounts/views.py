@@ -2,11 +2,11 @@ from django.shortcuts import render,redirect
 
 # Create your views here.
 
-def login_view(request):
+def login(request):
     return render(request, 'accounts/login.html')
 
-def register_view(request):
+def register(request):
     return render(request, 'accounts/reqister.html')
 
-def logout_view(request):
+def logout(request):
     return render(request, 'accounts/logout.html')

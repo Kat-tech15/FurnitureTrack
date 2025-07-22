@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
-{% block title %} Place Order {% endblock %}
 {% block content %}
+<h2>Order: {{ product.name }}</h2>
+<form method="post">
+  {% csrf_token %}
+  Quantity: <input type="number" name="quantity" min="1" value="1"><br>
+  <button type="submit">Place Order</button>
+</form>
 {% endblock %}

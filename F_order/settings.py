@@ -40,10 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'orders',
     'accounts',
-    'products',
-    
-    
+    'products',   
 ]
+#TAILWIND_APP_NAME = 'theme'
 
 
 MIDDLEWARE = [
